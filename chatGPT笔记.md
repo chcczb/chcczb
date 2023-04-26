@@ -1,5 +1,15 @@
 # 开发助手
-前后端工程存在私有库的问题，chatGPT在写代码时不会联系到上下文
+前后端工程存在私有库的问题
+- 1 chatGPT在写代码时不会用到这些私有库的 可以通过一点点喂一个给gpt的方式使用  使用成本很高
+- 2 涉及到商密的问题 不能把私有仓库喂给gpt
+- 3 由于对话输入字数限制 你不能将你现有的复杂业务实现类一次性的喂给gpt  如果想改一部分内容 也有一个使用成本的问题
+- 4 它有时会一本正经的胡说八道
+- 5 当你纠正他时 他态度很好 但是不会坚持立场  你说什么就是什么  这会导致摄于你的局限性纠正了一个正确的方法
+
+最好的方式：基于现阶段（我用的是GPT3.5） 
+你将它作为**一个无情的写代码机器**  而你是**一个有感情的人**指挥机器实现你的想法 
+你还需要是一个真正懂开发的人 在它给出代码时 审核它是不是胡说八道还是确实可用的代码
+
 ## SQL书写
 ### 创建一个多表关联的查询语句
 写一个sql语句 基表 decompost_budget_subject 别名s 关联 decompost_budget 别名m 关联条件 m.id = sub.decompostBudgetId 关联表 decompost_budget_activities 别名 act 关联条件 act.subjectId = sub.id 查询结果 uuid（） 返回唯一码作为ID s表查询 subjectCode subjectName act表查询 indicator 根据条件 当type等于01的时候 amount记为0 当是02的时候 记为amount 合计amount字段 按s表的type字段分组合计 返回结果进行非空判断   条件是s表ID 
