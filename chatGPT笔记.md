@@ -51,17 +51,25 @@ MathContext 的枚举值都是什么意思
 ### 创建一个多表关联的查询语句
 写一个sql语句 基表 decompost_budget_subject 别名s 关联 decompost_budget 别名m 关联条件 m.id = sub.decompostBudgetId 关联表 decompost_budget_activities 别名 act 关联条件 act.subjectId = sub.id 查询结果 uuid（） 返回唯一码作为ID s表查询 subjectCode subjectName act表查询 indicator 根据条件 当type等于01的时候 amount记为0 当是02的时候 记为amount 合计amount字段 按s表的type字段分组合计 返回结果进行非空判断   条件是s表ID 
 ![按要求输出一个sql](https://user-images.githubusercontent.com/130332194/234523584-224d7e09-1980-4a86-b8d3-f1f22a2baa0a.png)
-## 后端新类和服务创建
-### 创建一个数据库表相关的实体 my-batis  从controler iservice serviceimpl mapper po 
+
+## 前端代码书写
+我想写一个查询窗口的前端代码，同时我要用的有一部分组件是私有库
+接下来你要慢慢的**辅助它**进行代码编写， 说出你的想法 让它帮你完成
+针对一些私有库你要知道怎么用了才能去并规定它怎么写，这还是有门槛的
+![chat-shot (2)](https://user-images.githubusercontent.com/130332194/234776623-9a2a5a15-e9cb-43c4-babf-aa4586bdb238.png)
+
+## 后端代码书写
+### 后端新类和服务创建
+#### 创建一个数据库表相关的实体 my-batis  从controler iservice serviceimpl mapper po 
 先指定它是一个什么类型的开发  以后输出的内容都将基于此实现
 ![写一个userPO类 添加简单的查询方法](https://user-images.githubusercontent.com/130332194/234562530-215bbe4c-9b54-4727-96f6-56f453d9a455.png)
 
-## 后端方法
-### 业务代码的校验和调优
+### 后端方法
+#### 业务代码的校验和调优
 一个生成计划明细的方法
 ![chat-shot](https://user-images.githubusercontent.com/130332194/234756074-78594dea-7437-4b87-9c59-dce9a8ddeee4.png)
 
-## 帮忙写注释
+### 帮忙写注释
 ![image](https://user-images.githubusercontent.com/130332194/234764121-cc12dbcf-1f77-433d-83c6-ef0d086f7ce9.png)
 
 
