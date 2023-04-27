@@ -16,7 +16,7 @@
 可以通过对话进行详细的内容追问和完善
 
 ## 基础知识
-
+### 问一个小知识
 MathContext 的枚举值都是什么意思
 ![image](https://user-images.githubusercontent.com/130332194/234768993-7b318203-59df-4837-bce2-15d4a4acec9c.png)
 
