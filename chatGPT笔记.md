@@ -7,6 +7,18 @@
 
 问GPT更便捷一些
 ![chat-shot](https://user-images.githubusercontent.com/130332194/234740791-daff7ee9-ba82-4669-b688-ba3664de5bd3.png)
+## 解决方案
+怎么用bat文件做一个一键关机的脚本
+![image](https://user-images.githubusercontent.com/130332194/234764830-b1096709-d1c9-4d8b-91ba-db19e1b76361.png)
+
+加上可以中途取消的操作
+![image](https://user-images.githubusercontent.com/130332194/234764883-8a8fb7e7-c346-4067-8eec-b9206b25dee7.png)
+可以通过对话进行详细的内容追问和完善
+
+## 基础知识
+
+MathContext 的枚举值都是什么意思
+![image](https://user-images.githubusercontent.com/130332194/234768993-7b318203-59df-4837-bce2-15d4a4acec9c.png)
 
 
 # 开发助手
@@ -36,6 +48,9 @@
 ### 业务代码的校验和调优
 一个生成计划明细的方法
 ![chat-shot](https://user-images.githubusercontent.com/130332194/234756074-78594dea-7437-4b87-9c59-dce9a8ddeee4.png)
+
+## 帮忙写注释
+![image](https://user-images.githubusercontent.com/130332194/234764121-cc12dbcf-1f77-433d-83c6-ef0d086f7ce9.png)
 
 
 
