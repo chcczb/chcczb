@@ -8,6 +8,8 @@
 问GPT更便捷一些
 ![chat-shot](https://user-images.githubusercontent.com/130332194/234740791-daff7ee9-ba82-4669-b688-ba3664de5bd3.png)
 ## 解决方案
+
+### 写一个小脚本
 怎么用bat文件做一个一键关机的脚本
 ![image](https://user-images.githubusercontent.com/130332194/234764830-b1096709-d1c9-4d8b-91ba-db19e1b76361.png)
 
@@ -15,10 +17,20 @@
 ![image](https://user-images.githubusercontent.com/130332194/234764883-8a8fb7e7-c346-4067-8eec-b9206b25dee7.png)
 可以通过对话进行详细的内容追问和完善
 
+### 针对两阶段机制 做提问
+让他给你示例代码  在最后 它可以给你一些解释
+![image](https://user-images.githubusercontent.com/130332194/234770962-c1b811ba-1b6b-4099-8a97-0698a885740f.png)
+
+
+
 ## 基础知识
 ### 问一个小知识
 MathContext 的枚举值都是什么意思
 ![image](https://user-images.githubusercontent.com/130332194/234768993-7b318203-59df-4837-bce2-15d4a4acec9c.png)
+
+你也可以让他针对你看不懂的地方 详细讲讲
+![image](https://user-images.githubusercontent.com/130332194/234771112-468c8fc3-614a-4bc7-a21e-f72ce01194b1.png)
+![image](https://user-images.githubusercontent.com/130332194/234771134-38a0e6e6-57d9-4aa9-a26b-866099588657.png)
 
 
 # 开发助手
