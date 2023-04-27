@@ -53,6 +53,8 @@ MathContext 的枚举值都是什么意思
 ![按要求输出一个sql](https://user-images.githubusercontent.com/130332194/234523584-224d7e09-1980-4a86-b8d3-f1f22a2baa0a.png)
 
 ## 前端代码书写
+### 前端从0开始
+#### 写一个实际项目的代码
 我想写一个查询窗口的前端代码，同时我要用的有一部分组件是私有库
 接下来你要慢慢的**辅助它**进行代码编写， 说出你的想法 让它帮你完成
 针对一些私有库你要知道怎么用了才能去并规定它怎么写，这还是有门槛的
@@ -72,8 +74,6 @@ MathContext 的枚举值都是什么意思
 ### 帮忙写注释
 ![image](https://user-images.githubusercontent.com/130332194/234764121-cc12dbcf-1f77-433d-83c6-ef0d086f7ce9.png)
 
-
-
 # 文档助手
 ## 文档书写
 ### 写一份提纲
@@ -82,3 +82,62 @@ MathContext 的枚举值都是什么意思
 ### BUG分析报告
 写一个BUG分析报告 内容为因为没有判断库存信息是否存在 下面代码中存在使用空指针情况 导致生产环境报错 
 ![BUG分析报告](https://user-images.githubusercontent.com/130332194/234550999-355d4e91-311d-4b32-98ae-85379255b39d.png)
+
+
+# 测试助手
+## 测试用例
+### 给定一个方法形成测试用例
+Q:针对 createRollSale 这个后端方法 作为接口 写一份测试用例
+A:好的，假设要测试 `createRollSale` 方法的正确性和完整性，可以根据以下情况编写测试用例：
+
+1. 测试输入为空的情况：传入空的销售计划和明细列表，期望方法能够正常执行并返回。
+2. 测试输入缺失必要参数的情况：例如不传入滚动周期 PO 对象 Map 或者组织名称等必要参数，期望方法抛出对应的异常或错误。
+3. 测试输入数据规模较小的情况：例如传入少量的销售计划和明细数据，检查方法生成的滚动销售计划是否符合预期。
+4. 测试输入数据规模较大的情况：例如传入大量的销售计划和明细数据，检查方法生成的滚动销售计划是否符合预期，并且检查方法执行时间是否合理。
+5. 测试输入数据边界情况：例如传入指标类型下只有一个销售计划或只有一个销售明细，检查方法的输出结果是否符合预期，是否会出现异常。
+
+这些测试用例可以以 JUnit 的形式编写，具体实现方式可以参考如下代码片段：
+
+```java
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class ExampleTest {
+    @Test
+    public void testCreateRollSaleWithEmptyInputs() {
+        // Arrange
+        List<RollSaleVO> emptyList = Collections.emptyList();
+        List<RollSaleDetailVO> emptyDetailList = Collections.emptyList();
+
+        // Act
+        createRollSale(emptyList, new RollSaleVO(), "orgName", emptyDetailList, new HashMap<>(),
+                Collections.emptyList(), Collections.emptyList(), Collections.emptyList());
+
+        // Assert
+        Assertions.assertTrue(true, "Method should not throw any exception");
+    }
+
+    @Test
+    public void testCreateRollSaleWithMissingInputs() {
+        // Arrange
+        List<RollSaleVO> emptyList = Collections.emptyList();
+        List<RollSaleDetailVO> emptyDetailList = Collections.emptyList();
+
+        // Act + Assert
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            createRollSale(emptyList, null, "orgName", emptyDetailList, new HashMap<>(),
+                    Collections.emptyList(), Collections.emptyList(), Collections.emptyList());
+        });
+    }
+
+    // .... 其他测试用例
+}
+``` 
+由于我不了解您的具体业务和代码实现细节，以上只是一些简单的示例测试用例，您可以根据实际情况进行扩展和调整。
+
+
+
+
+
+
+
