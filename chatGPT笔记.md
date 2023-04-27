@@ -30,6 +30,11 @@
 先指定它是一个什么类型的开发  以后输出的内容都将基于此实现
 ![写一个userPO类 添加简单的查询方法](https://user-images.githubusercontent.com/130332194/234562530-215bbe4c-9b54-4727-96f6-56f453d9a455.png)
 
+## 后端方法
+### 业务代码的校验和调优
+一个生成计划明细的方法
+![chat-shot](https://user-images.githubusercontent.com/130332194/234756074-78594dea-7437-4b87-9c59-dce9a8ddeee4.png)
+
 
 
 # 文档助手
