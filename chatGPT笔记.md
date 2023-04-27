@@ -1,8 +1,10 @@
 # 知识库
 作为一个知识库，**它比百度优秀！**
 不需要你在广告中分辨你想要的内容  
+
 问百度你需要分辨出哪个是你要的
 ![image](https://user-images.githubusercontent.com/130332194/234740681-fe6ea905-af40-4176-be90-b3a8b71e645e.png)
+
 问GPT更便捷一些
 ![chat-shot](https://user-images.githubusercontent.com/130332194/234740791-daff7ee9-ba82-4669-b688-ba3664de5bd3.png)
 
